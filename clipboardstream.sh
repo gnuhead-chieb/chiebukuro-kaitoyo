@@ -2,7 +2,7 @@
 before=null
 while true
 do
-clipboard=$(`termux-clipboard-get`)
+clipboard=(`termux-clipboard-get`)
 if [ $clipboard != $before ] ; then
 ## is_update true
 echo $clipboard | nc $1 1300 -N
