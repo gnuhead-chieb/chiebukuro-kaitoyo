@@ -3,7 +3,7 @@ before=Nul
 while true
 do
 clipboard=(`termux-clipboard-get`)
-if [ $clipboard != $before ] ; then
+if [ "$clipboard" != "$before" ] ; then
 ## is_update true
 echo $clipboard | nc $1 1300 --send-only
 before=$clipboard
