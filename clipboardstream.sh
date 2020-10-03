@@ -1,5 +1,5 @@
 #!/bin/bash
-before=null
+before=Nul
 while true
 do
 clipboard=(`termux-clipboard-get`)
